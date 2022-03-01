@@ -1,0 +1,78 @@
+.process__wrapper {
+  width: 85vw;
+  display: grid;
+  gap: 3rem;
+}
+
+.process__wrapper .intro__title {
+  font-size: clamp(1.5rem, 10vmin, 4rem);
+  width: 50%;
+  line-height: 1.2;
+}
+
+.process__wrapper .intro__description {
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
+}
+
+.process__item {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #f4f4ff;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.process__item--active {
+  background-color: #fff4ef;
+  box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
+  -webkit-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
+  -moz-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
+}
+
+.process__icon {
+  display: grid;
+  place-items: center;
+  width: 6rem;
+  height: 6rem;
+  font-size: 2.5rem;
+  color: var(--light-color);
+  border-radius: 1rem;
+}
+
+.process__icon--daily {
+  background-color: var(--accent-color);
+}
+
+.process__icon--meeting {
+  background-color: #4756df;
+}
+
+.process__icon--testing {
+  background-color: #fa6444;
+}
+
+.process__title {
+  font-size: 1.8rem;
+}
+
+.process__description {
+  color: var(--secondary-color);
+}
+
+@media screen and (min-width: 600px) {
+  .process__item {
+    padding: 4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .process__wrapper {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 5rem;
+  }
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Assets/pj_logo.ico" type="image/icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./Styles/layout.css" />
+    <link rel="stylesheet" href="./Styles/header.css" />
+    <link rel="stylesheet" href="./Styles/hero.css" />
+    <link rel="stylesheet" href="./Styles/process.css" />
+    <link rel="stylesheet" href="./Styles/features.css" />
+    <link rel="stylesheet" href="./Styles/offers.css" />
+    <link rel="stylesheet" href="./Styles/signup.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+
+    <title>PJ Studio</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container header__wrapper">
+        <img
+          src="./Assets/pj logo.png"
+          alt="PJ Studio logo"
+          class="header__logo"
+        />
+
+        <button class="btn header__btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="navbar">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Feedback</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn btn--primary header__demo">Request a demo</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container hero__wrapper">
+          <div class="hero--left">
+            <div class="hero__intro">
+              <h1 class="intro__title">Web & Mobile Design Development</h1>
+              <img
+                src="./Assets/Arrow.svg"
+                alt=""
+                role="presentation"
+                class="intro__arrow"
+              />
+            </div>
+            <p class="hero__description">
+              Helps you to organize your income and expenses
+            </p>
+            <div class="hero__demo">
+              <button class="btn btn--primary demo__btn">
+                Try free demo
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <p class="demo__description">Web, iOs and Android</p>
+            </div>
+          </div>
+          <div class="hero--right">
+            <img
+              src="./Assets/hero.svg"
+              alt="hero"
+              role="presentation"
+              class="hero__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="our-process">
+        <div class="container process__wrapper">
+          <div class="process__intro">
+            <h2 class="intro__title">Our Process</h2>
+            <p class="intro__description">
+              Helps you to organize your income and expenses
+            </p>
+          </div>
+
+          <div class="process__item process__item--active">
+            <i
+              class="fa-solid fa-door-open process__icon process__icon--daily"
+            ></i>
+            <h3 class="process__title">Daily Standup</h3>
+            <p class="process__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+
+          <div class="process__item">
+            <i
+              class="fa-solid fa-shield-blank process__icon process__icon--meeting"
+            ></i>
+            <h3 class="process__title">Weekly Syn. Meeting</h3>
+            <p class="process__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+
+          <div class="process__item">
+            <i
+              class="fa-solid fa-arrow-turn-up process__icon process__icon--testing"
+            ></i>
+            <h3 class="process__title">User Testing</h3>
+            <p class="process__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="features-mobile">
+        <div class="feature__wrapper feature--mobile">
+          <img src="./Assets/mobile.png" alt="mobile" class="feature__img" />
+
+          <div class="feature__content">
+            <div class="feature__intro">
+              <p class="feature__prefix">Features</p>
+              <h2 class="feature__title">Mobile App</h2>
+              <p class="feature__description">
+                Tellus lacus morbi sagittis lacus in. Amet nist at mauris enim
+                accumsan nisi, tincidunt vel. Enim ipsum.
+              </p>
+            </div>
+
+            <div class="content__box content__box--left">
+              <div class="content__icon">
+                <img src="./Assets/SVG/ui and ux.png" alt="ui/ux" />
+              </div>
+              <h3 class="content__title">UI & UX Design</h3>
+              <p class="content__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+
+            <div class="content__box content__box--right">
+              <div class="content__icon">
+                <img src="./Assets/SVG/native ios.png" alt="native ios app" />
+              </div>
+              <h3 class="content__title">Native iOS App</h3>
+              <p class="content__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="offers">
+        <div class="container offers__wrapper">
+          <h2 class="offers__title">Customize Offers</h2>
+          <div class="offers__img">
+            <div class="img__client">
+              <div class="img__background"></div>
+              <img src="./Assets/customer.png" alt="happy client" />
+            </div>
+            <img
+              src="./Assets/happy-clients.png"
+              alt="100+ happy clients"
+              class="img__icon"
+            />
+            <div class="img__circle--big"></div>
+            <div class="img__circle--little"></div>
+          </div>
+
+          <div class="offers__options">
+            <div class="options__item options__item--cms">
+              <h3 class="options__title">Custom CMS</h3>
+              <p class="options__description">
+                Tellus lacus morbi sagittis lacus in. Amet nist at mauris enim
+                accumsan nisi, tincidunt vel.
+              </p>
+            </div>
+
+            <div class="options__item options__item--payment">
+              <h3 class="options__title">Payment Processing</h3>
+              <p class="options__description">
+                Tellus lacus morbi sagittis lacus in. Amet nist at mauris enim
+                accumsan nisi, tincidunt vel.
+              </p>
+            </div>
+
+            <div class="options__item options__item--store">
+              <h3 class="options__title">App Store Submission</h3>
+              <p class="options__description">
+                Tellus lacus morbi sagittis lacus in. Amet nist at mauris enim
+                accumsan nisi, tincidunt vel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features-web">
+        <div class="feature__wrapper feature--web">
+          <img src="./Assets/laptop.png" alt="web" class="feature__img" />
+          <div class="background__circle"></div>
+
+          <div class="feature__content">
+            <div class="feature__intro">
+              <p class="feature__prefix">Features</p>
+              <h2 class="feature__title">Web Development</h2>
+              <p class="feature__description">
+                Tellus lacus morbi sagittis lacus in. Amet nist at mauris enim
+                accumsan nisi, tincidunt vel. Enim ipsum.
+              </p>
+            </div>
+
+            <div class="content__box content__box--left">
+              <div class="content__icon">
+                <img src="./Assets/SVG/ui and ux.png" alt="ui/ux" />
+              </div>
+              <h3 class="content__title">UI & UX Design</h3>
+              <p class="content__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+
+            <div class="content__box content__box--right">
+              <div class="content__icon">
+                <img src="./Assets/SVG/react.png" alt="react & vue js" />
+              </div>
+              <h3 class="content__title">React & Vue JS</h3>
+              <p class="content__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="signup">
+        <div class="container signup__wrapper">
+          <div class="signup__content">
+            <h2 class="signup__title">Sign up first</h2>
+            <p>There will be many benefits that you will get</p>
+            <a href="#" class="btn btn--primary signup__btn">Sign up now</a>
+          </div>
+
+          <img
+            src="./Assets/SignUp.png"
+            alt=""
+            role="presentation"
+            class="signup__img"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container footer__wrapper">
+        <div class="footer__box footer__box--intro">
+          <img src="./Assets/footer logo.png" alt="logo" class="footer__logo" />
+          <p class="footer__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            velit.
+          </p>
+          <div class="footer__socials">
+            <a href="#" class="socails__btn"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="socails__btn"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="socails__btn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="socails__btn"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer__box footer__box--resources">
+          <h2 class="footer__title">Resources</h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Who We Are</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">What We Do?</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Projects Delievery</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Our Products</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__box footer__box--links">
+          <h2 class="footer__title">Useful Links</h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Team</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">History</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Locations</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__box footer__box--newsletter">
+          <h2 class="footer__title footer__title--newsletter">Newsletter</h2>
+          <p class="footer__description">Over 25000 people have subscribed</p>
+          <form action="" method="post" class="footer__form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+          <p class="footer__description">We don't sell your information.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+#hero {
+  margin-top: 10rem;
+}
+
+.hero__wrapper {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 80vw;
+}
+
+.hero--left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero__intro {
+  display: grid;
+  place-items: center;
+}
+
+.hero__intro .intro__title {
+  grid-area: 1/ 1/ 2/ 2;
+  font-size: clamp(1.5rem, 10vmin, 7rem);
+  z-index: 1;
+}
+
+.hero__intro .intro__arrow {
+  grid-area: 1/ 1/ 2/ 2;
+  height: clamp(1rem, 8vmin, 8rem);
+}
+
+.hero__description {
+  color: var(--secondary-color);
+}
+
+.hero__demo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.hero__demo .demo__btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: clamp(0.5rem, 3vmin, 1.5rem);
+}
+
+.hero__demo .demo__description {
+  position: relative;
+  color: var(--secondary-color);
+}
+
+.hero__demo .demo__description::before {
+  content: "";
+  position: absolute;
+  width: 1.3rem;
+  height: 0.2rem;
+  left: -2rem;
+  top: 50%;
+  border-radius: 1rem;
+  background-color: var(--secondary-color);
+}
+
+.hero--right {
+  display: none;
+}
+
+.hero__img {
+  height: clamp(10rem, 50vmin, 50rem);
+}
+
+@media screen and (min-width: 600px) {
+  .hero__demo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero__wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero--right {
+    display: block;
+  }
+}

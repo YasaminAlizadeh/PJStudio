@@ -1,0 +1,134 @@
+.footer__wrapper {
+  width: 80vw;
+  display: grid;
+  gap: 5rem;
+  margin-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.footer__box--intro {
+  align-items: center;
+}
+
+.footer__logo {
+  width: 10rem;
+}
+
+.footer__description {
+  color: var(--secondary-color);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socails__btn {
+  display: grid;
+  width: 4rem;
+  height: 4rem;
+  place-items: center;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0.1rem #fa6444;
+  -webkit-box-shadow: inset 0 0 0 0.1rem #fa6444;
+  -moz-box-shadow: inset 0 0 0 0.1rem #fa6444;
+  color: #fa6444;
+  transition: all 0.3s ease-in-out;
+}
+
+.socails__btn:hover {
+  box-shadow: inset 0 0 0 0.7rem #fa6444, 0px 1.5rem 1rem -0.5rem #fa65445e;
+  -webkit-box-shadow: inset 0 0 0 0.7rem #fa6444,
+    0px 1.5rem 1rem -0.5rem #fa65445e;
+  -moz-box-shadow: inset 0 0 0 0.7rem #fa6444, 0px 1.5rem 1rem -0.5rem #fa65445e;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__title--newsletter {
+  text-transform: uppercase;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__link {
+  position: relative;
+  color: var(--dark-color);
+}
+
+.footer__link::before {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 0.1rem solid var(--dark-color);
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer__link:hover::before {
+  transform: scaleX(1);
+}
+
+.footer__form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  box-shadow: 0 0 0 0.1rem var(--dark-color);
+  border-radius: 0.5rem;
+}
+
+.footer__form input {
+  padding: 0.5rem;
+  border: none;
+}
+
+.footer__form input::placeholder {
+  color: var(--dark-color);
+}
+
+@media screen and (min-width: 600px) {
+  .footer__wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer__box--intro {
+    grid-area: 1/ 1/ 2/ 3;
+  }
+
+  .footer__box--newsletter {
+    grid-area: 3/ 1/ 4/ 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    width: 90vw;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .footer__box--intro {
+    grid-area: unset;
+    align-items: flex-start;
+  }
+
+  .footer__box--newsletter {
+    grid-area: unset;
+  }
+
+  .footer__form {
+    width: fit-content;
+  }
+}
