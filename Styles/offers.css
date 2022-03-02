@@ -110,6 +110,8 @@
 
 .options__item--active {
   transform: translateX(3rem);
+  -webkit-transform: translateX(3rem);
+  -moz-transform: translateX(3rem);
 }
 
 .options__title {
