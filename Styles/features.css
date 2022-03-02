@@ -31,7 +31,7 @@
 }
 
 .feature--mobile .feature__img {
-  width: clamp(10rem, 30%, 45rem);
+  width: clamp(10rem, 30%, 35rem);
 }
 
 .feature--web .feature__img {
