@@ -17,25 +17,25 @@
   position: relative;
   display: grid;
   place-items: center;
-  width: max-content;
   border-radius: 50%;
   overflow: hidden;
 }
 
 .img__background {
   position: absolute;
-  top: -5rem;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 500px 500px;
-  border-color: transparent transparent var(--accent-color) transparent;
+  top: 35%;
+  left: 15%;
+  width: 150%;
+  height: 150%;
+  background-color: var(--accent-color);
+  transform: rotateZ(-25deg);
+  transform-origin: center;
   z-index: -1;
-  transform: rotateZ(25deg);
 }
 
 .img__client img {
   margin-bottom: -1rem;
+  width: clamp(15rem, 80vw, 50rem);
 }
 
 .img__icon {
@@ -49,8 +49,8 @@
   position: absolute;
   top: -2rem;
   left: -5rem;
-  width: 20rem;
-  height: 20rem;
+  width: min(40vw, 20rem);
+  height: min(40vw, 20rem);
   background-color: var(--secondary-color);
   opacity: 0.3;
   border-radius: 50%;

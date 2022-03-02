@@ -118,7 +118,7 @@
   height: clamp(10rem, 50vmin, 50rem);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 688x) {
   .hero__demo {
     flex-direction: row;
     align-items: center;

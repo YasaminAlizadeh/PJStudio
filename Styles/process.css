@@ -65,7 +65,7 @@
   color: var(--secondary-color);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 688px) {
   .process__item {
     padding: 4rem;
   }
