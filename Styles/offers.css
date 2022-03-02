@@ -78,6 +78,7 @@
   position: relative;
   padding: 2rem;
   border-radius: 1.2rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .options__item--cms {
@@ -105,6 +106,10 @@
     3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
   -moz-box-shadow: -0.8rem 0 0 -0.1rem #30bb4f,
     3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
+}
+
+.options__item--active {
+  transform: translateX(3rem);
 }
 
 .options__title {

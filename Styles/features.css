@@ -31,11 +31,11 @@
 }
 
 .feature--mobile .feature__img {
-  width: clamp(10rem, 30%, 30rem);
+  width: clamp(10rem, 30%, 45rem);
 }
 
 .feature--web .feature__img {
-  width: clamp(30rem, 90%, 60rem);
+  width: clamp(30rem, 90%, 80rem);
 }
 
 .background__circle {
