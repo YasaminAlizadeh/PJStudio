@@ -78,6 +78,7 @@
   position: relative;
   padding: 2rem;
   border-radius: 1.2rem;
+  cursor: default;
   transition: all 0.3s ease-in-out;
 }
 
@@ -139,5 +140,11 @@
   .offers__options {
     width: min(100%, 60rem);
     margin-right: auto;
+  }
+
+  .options__item--active {
+    transform: translateX(calc(var(--offer-index) * 3rem));
+    -webkit-transform: translateX(calc(var(--offer-index) * 3rem));
+    -moz-transform: translateX(calc(var(--offer-index) * 3rem));
   }
 }

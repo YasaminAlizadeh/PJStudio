@@ -1,10 +1,12 @@
 .signup__wrapper {
+  position: relative;
   width: 80vw;
   padding: 2rem;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   gap: 2rem;
+  z-index: 1;
   border-radius: 0.5rem;
   box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
   -webkit-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);

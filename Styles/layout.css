@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  outline: 1px solid #f00 !important;
+  /* outline: 1px solid #f00 !important; */
 }
 
 :root {
@@ -16,6 +16,20 @@
   --secondary-color: #7e7e7e;
   --light-color: #f7f7f7;
   --dark-color: #181131;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  -webkit-text-fill-color: var(--light-color);
+  -moz-text-fill-color: var(--light-color);
+}
+
+::-moz-selection {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  -webkit-text-fill-color: var(--light-color);
+  -moz-text-fill-color: var(--light-color);
 }
 
 html {

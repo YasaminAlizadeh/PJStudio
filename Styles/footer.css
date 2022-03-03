@@ -1,9 +1,10 @@
 .footer__wrapper {
+  position: relative;
   width: 80vw;
   display: grid;
   gap: 5rem;
   margin-top: 10rem;
-  padding-bottom: 10rem;
+  padding: 10rem 0;
 }
 
 .footer__box--intro {
@@ -74,11 +75,13 @@
   bottom: 0;
   border-bottom: 0.1rem solid var(--dark-color);
   transform: scaleX(0);
+  transform-origin: right;
   transition: transform 0.2s ease-in-out;
 }
 
 .footer__link:hover::before {
   transform: scaleX(1);
+  transform-origin: left;
 }
 
 .footer__form {

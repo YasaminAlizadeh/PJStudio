@@ -40,3 +40,6 @@ offer_items.forEach((item) =>
     item.classList.add("options__item--active");
   })
 );
+
+const social_btns = [...document.getElementsByClassName("socails__btn")];
+hoverAnimation(social_btns);
