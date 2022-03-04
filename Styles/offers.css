@@ -124,6 +124,14 @@
   color: var(--secondary-color);
 }
 
+@media screen and (max-width: 200px) {
+  .options__item--active {
+    transform: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .offers__wrapper {
     padding: 0 3rem;
@@ -143,8 +151,8 @@
   }
 
   .options__item--active {
-    transform: translateX(calc(var(--offer-index) * 3rem));
-    -webkit-transform: translateX(calc(var(--offer-index) * 3rem));
-    -moz-transform: translateX(calc(var(--offer-index) * 3rem));
+    transform: 3rem;
+    -webkit-transform: 3rem;
+    -moz-transform: 3rem;
   }
 }

@@ -1,7 +1,7 @@
 .signup__wrapper {
   position: relative;
   width: 80vw;
-  padding: 2rem;
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;

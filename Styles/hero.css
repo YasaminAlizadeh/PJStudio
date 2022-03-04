@@ -7,6 +7,7 @@
   display: grid;
   place-items: center;
   width: 80vw;
+  height: min-content;
 }
 
 .hero--left {
@@ -161,7 +162,7 @@
 }
 
 .hero__img {
-  height: clamp(10rem, 50vmin, 50rem);
+  width: clamp(50rem, 100%, 100rem);
 }
 
 @media screen and (min-width: 688px) {
