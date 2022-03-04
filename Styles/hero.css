@@ -21,7 +21,7 @@
   place-items: center;
 }
 
-.intro__title {
+.hero__intro .intro__title {
   grid-area: 1/ 1/ 2/ 2;
   font-size: clamp(1.5rem, 10vmin, 8rem);
   z-index: 1;
@@ -48,7 +48,7 @@
   animation: hover-animation-rev 0.75s ease forwards;
 }
 
-.intro__title:hover {
+.hero__intro .intro__title:hover {
   animation: hover-animation 0.75s ease-in forwards;
 }
 
@@ -73,19 +73,19 @@
   }
 }
 
-.intro__icon {
+.hero__intro .intro__icon {
   grid-area: 1/ 1/ 2/ 2;
   height: clamp(5rem, 15vmin, 10rem);
 }
 
-.intro__icon {
+.hero__intro .intro__icon {
   position: relative;
   display: flex;
   opacity: 0.9;
   margin-left: 10rem;
 }
 
-.icon__background {
+.hero__intro .icon__background {
   display: grid;
   place-items: center;
   position: relative;
@@ -96,7 +96,7 @@
   overflow: hidden;
 }
 
-.icon__circle {
+.hero__intro .icon__circle {
   position: absolute;
   left: -20%;
   top: 50%;
@@ -106,16 +106,16 @@
   border-radius: 50%;
 }
 
-.icon__circle--red {
+.hero__intro .icon__circle--red {
   background-color: #fa6444;
   z-index: -1;
 }
 
-.icon__circle--yellow {
+.hero__intro .icon__circle--yellow {
   background-color: #fdc45e;
 }
 
-.icon__arrow {
+.hero__intro .icon__arrow {
   display: flex;
   transform: rotate(-90deg);
   font-size: clamp(3rem, 8vmin, 6rem);

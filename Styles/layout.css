@@ -39,6 +39,7 @@ html {
 }
 
 body {
+  position: relative;
   font-size: clamp(1rem, 5vmin, 1.5rem);
   background: linear-gradient(141deg, #fff 0%, #f7f7f7 51%, #fff 75%);
   background-size: cover;
