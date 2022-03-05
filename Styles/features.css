@@ -38,13 +38,14 @@
   width: clamp(10rem, 100%, 60rem);
   height: auto;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 .background__circle {
   position: absolute;
-  bottom: 7rem;
-  right: 7rem;
-  z-index: -1;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 1;
   width: 15rem;
   height: 15rem;
   background-color: #98c1a1;
