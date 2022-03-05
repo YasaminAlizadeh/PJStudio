@@ -43,8 +43,8 @@
 
 .background__circle {
   position: absolute;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 5rem;
+  right: 5rem;
   z-index: 1;
   width: 15rem;
   height: 15rem;
