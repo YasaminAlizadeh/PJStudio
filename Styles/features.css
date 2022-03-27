@@ -218,7 +218,8 @@
 
   .feature--mobile .feature__background img {
     top: 50%;
-    left: 0;
+    right: 0;
+    left: unset;
     width: clamp(50rem, 100%, 80rem);
     z-index: 1;
     transform: translateY(-50%);
