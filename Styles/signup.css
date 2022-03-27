@@ -1,6 +1,5 @@
 .signup__wrapper {
   position: relative;
-  width: 80vw;
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column-reverse;
@@ -30,7 +29,7 @@
 }
 
 .signup__img {
-  width: 60%;
+  width: min(100%, 40rem);
 }
 
 @media screen and (min-width: 688px) {

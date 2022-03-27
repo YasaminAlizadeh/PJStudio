@@ -1,5 +1,4 @@
 .process__wrapper {
-  width: 85vw;
   display: grid;
   gap: 3rem;
 }
@@ -30,7 +29,7 @@
 }
 
 .process__item--active {
-  background-color: #fff4ef;
+  background-color: #fff4ef50;
   box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
   -webkit-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
   -moz-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);

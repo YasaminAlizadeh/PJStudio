@@ -30,7 +30,7 @@
   background-color: var(--accent-color);
   transform: rotateZ(-25deg);
   transform-origin: center;
-  z-index: -1;
+  z-index: -2;
 }
 
 .img__client img {
@@ -109,12 +109,6 @@
     3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
 }
 
-.options__item--active {
-  transform: translateX(3rem);
-  -webkit-transform: translateX(3rem);
-  -moz-transform: translateX(3rem);
-}
-
 .options__title {
   font-size: 1.9rem;
   margin-bottom: 1rem;
@@ -151,8 +145,8 @@
   }
 
   .options__item--active {
-    transform: 3rem;
-    -webkit-transform: 3rem;
-    -moz-transform: 3rem;
+    transform: translateX(3rem);
+    -webkit-transform: translateX(3rem);
+    -moz-transform: translateX(3rem);
   }
 }

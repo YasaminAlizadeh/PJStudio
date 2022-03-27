@@ -65,7 +65,7 @@ main {
 }
 
 .container {
-  width: 100%;
+  width: min(90%, 160rem);
   margin: auto;
   padding: 0 1rem;
 }
