@@ -1,3 +1,6 @@
+document.body.ondragstart = () => {
+  return false;
+};
 const hoverAnimation = (items) => {
   items.forEach((item) =>
     item.addEventListener("mouseover", () => {
