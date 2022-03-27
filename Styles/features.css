@@ -1,9 +1,5 @@
-.feature__wrapper {
-  position: relative;
-  left: 0;
-  right: 0;
-  display: grid;
-  grid-template-rows: auto 1fr;
+.feature {
+  z-index: 1;
 }
 
 .feature--mobile {
@@ -14,42 +10,43 @@
   background-color: #fff4ef;
 }
 
+.feature__wrapper {
+  position: relative;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  z-index: -10;
+  margin: auto;
+}
+
 .feature--mobile::before {
   content: "";
   position: absolute;
   right: 0;
   top: -10rem;
-  width: min(20vmin, 8rem);
-  height: min(20vmin, 8rem);
+  width: min(20vw, 8rem);
+  height: min(20vw, 8rem);
   border-radius: 100% 0 0 0;
   background-color: var(--accent-color);
 }
 
 .feature__background {
-  height: clamp(5rem, 50vw, 20rem);
   position: relative;
+  height: clamp(5rem, 50vw, 20rem);
   width: 100%;
+  overflow-x: clip;
 }
 
 .feature__background img {
   position: absolute;
   top: -50%;
   left: 50%;
-  width: clamp(10rem, 100%, 60rem);
   height: auto;
+  width: 100%;
+  max-width: 60rem;
   transform: translateX(-50%);
-  z-index: 2;
-}
-
-.background__circle {
-  position: absolute;
-  bottom: 5rem;
-  right: 5rem;
-  z-index: 1;
-  width: 15rem;
-  height: 15rem;
-  background-color: #98c1a1;
-  border-radius: 50%;
+  z-index: 0;
 }
 
 .feature__content {
@@ -188,21 +185,30 @@
 @media screen and (min-width: 992px) {
   .feature__wrapper {
     display: grid;
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto;
     gap: 5rem;
     padding: 0;
     min-height: min-content;
   }
 
-  .feature--web {
-    flex-direction: row-reverse;
-    grid-template-columns: 1fr 40%;
-  }
-
   .feature__background {
     justify-self: center;
     align-self: center;
+    overflow-x: unset;
+  }
+
+  .feature--web .feature__background::before {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: 35%;
+    transform: translate(50%, 50%);
+    z-index: -1;
+    width: min(10vw, 15rem);
+    height: min(10vw, 15rem);
+    background-color: #98c1a1;
+    border-radius: 50%;
   }
 
   .feature__background img {
@@ -213,8 +219,8 @@
   .feature--mobile .feature__background img {
     top: 50%;
     left: 0;
-    width: clamp(60rem, 100%, 80rem);
-    z-index: 200;
+    width: clamp(50rem, 100%, 80rem);
+    z-index: 1;
     transform: translateY(-50%);
   }
 
@@ -235,8 +241,7 @@
   }
 
   .feature__content {
-    width: min(80%, 70rem);
-    padding: 3rem 8rem;
+    padding: 3rem 5rem;
     box-shadow: unset;
     -webkit-box-shadow: unset;
     -moz-box-shadow: unset;
