@@ -55,8 +55,8 @@ This is a static website built with vanilla HTML, CSS, and JavaScript.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YasaminAlizadeh/pjstudio-landing-page.git
-    cd pjstudio-landing-page
+    git clone https://github.com/YasaminAlizadeh/PJStudio.git
+    cd PJStudio
     ```
 
 2.  **Open `index.html`:**
